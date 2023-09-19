@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "tsc --watch --preserveWatchOutput",
-    "start:dev": "nodemon dist/index.js"
+    "build:dev": "tsc --watch --preserveWatchOutput webpack -v",
+    "start:dev": "nodemon dist/index.js & webpack -w"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "@types/node": "^20.6.2",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "html-webpack-plugin": "^5.5.3",
     "nodemon": "^3.0.1",
     "ts-loader": "^9.4.4",
     "typescript": "^5.2.2",
